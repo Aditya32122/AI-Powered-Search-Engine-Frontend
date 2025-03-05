@@ -30,6 +30,11 @@ const Login = () => {
     setLoading(false);
   };
 
+  const handleTestCredentials = () => {
+    setUsername("testuser");
+    setPassword("testpassword");
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center py-10 px-4">
       <h2 className="text-3xl font-bold text-purple-400 mb-6">Login</h2>
@@ -56,6 +61,12 @@ const Login = () => {
           className="px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg font-semibold transition"
         >
           {loading ? "Logging in..." : "Login"}
+        </button>
+        <button
+          onClick={handleTestCredentials}
+          className="px-5 py-2 bg-gray-700 hover:bg-gray-800 rounded-lg font-semibold transition"
+        >
+          Use Test Credentials
         </button>
       </div>
 
