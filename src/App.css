@@ -1,0 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import "tailwindcss";
+
+
+.auth-box {
+  width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(149, 117, 205, 0.3);
+  text-align: center;
+  border: none;
+}
+
+.auth-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #9575cd;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.auth-input::placeholder {
+  color: #ccc;
+}
+
+.auth-button {
+  background: linear-gradient(90deg, #9575cd, #7e57c2);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.auth-button:hover {
+  background: linear-gradient(90deg, #7e57c2, #9575cd);
+  box-shadow: 0px 0px 15px rgba(149, 117, 205, 0.7);
+}
+
+.auth-link {
+  margin-top: 15px;
+  color: #cccccc;
+}
+
+.auth-link a {
+  color: #9575cd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
