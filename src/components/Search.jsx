@@ -12,7 +12,7 @@ const Search = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://127.0.0.1:8000/search/", { query_text: query });
+      const response = await axios.post("https://ai-search-project.onrender.com/search/", { query_text: query });
       setResults(response.data);
     } catch (error) {
       console.error("Error fetching search results:", error);
