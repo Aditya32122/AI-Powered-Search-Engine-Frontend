@@ -15,7 +15,7 @@ const Signup = () => {
 
     setLoading(true);
     try {
-      await axios.post("https://ai-search-project.onrender.com/register/", {
+      await axios.post("https://ai-powered-search-engine-production.up.railway.app/register/", {
         username,
         email,
         password,

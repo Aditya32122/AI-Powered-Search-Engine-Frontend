@@ -16,7 +16,7 @@ const Login = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("https://ai-search-project.onrender.com/login/", {
+      const response = await axios.post("https://ai-powered-search-engine-production.up.railway.app/login/", {
         username,
         password,
       });
